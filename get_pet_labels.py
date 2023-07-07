@@ -34,8 +34,6 @@ def extract_it(img, pattern = ".+[a-z]_"):
     result = srch.group()[:-1].lower().split('_')
     result = " ".join(result)
 
-    #print(f"extracted pattern for {pattern}:", result)
-    #print(f"type of {result}: ", type(result))
     return result
 
 
@@ -63,8 +61,6 @@ def get_pet_labels(image_dir):
     image_label_dic = {}
     for img in listdir(image_dir):
         image_label_dic[img] = [extract_it(img)]
-    # Replace None with the results_dic dictionary that you created with this
-    # function
     return image_label_dic
 
 

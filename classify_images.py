@@ -68,14 +68,9 @@ def classify_images(images_dir, results_dic, model):
     """
     for img in listdir(images_dir):
         image_classification = classifier(images_dir + img, model).lower()
-        #print(image_classification, image_classification.split(', '))
-        #image_classification = [label.strip().lower() for label in image_classification.split(",")]
         if img in results_dic:
             #print(f"image: {img}, actual: {results_dic[img]}, predicted: {image_classification}")
             results_dic[img].extend([image_classification, results_dic[img][0] in image_classification.split(', ')])
-        #else:
-        #    print(f"image: {img}.. not in the data")
-    #print(results_dic, len(results_dic))
 
 
 

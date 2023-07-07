@@ -42,7 +42,7 @@ from print_results import print_results
 
 # variables
 #image_dir = r"pet_images/"
-image_dir = r"uploaded_images/"
+# image_dir = r"uploaded_images/"
 
 
 
@@ -69,7 +69,7 @@ def main():
     #             get_pet_labels(in_arg.dir)
     # This function creates the results dictionary that contains the results,
     # this dictionary is returned from the function call as the variable results
-    results = get_pet_labels(image_dir)
+    results = get_pet_labels(in_arg.dir)
 
     # Function that checks Pet Images in the results Dictionary using results
     check_creating_pet_image_labels(results)
