@@ -28,7 +28,7 @@ import re
 
 
 
-def extract_it(img, pattern = ".+[a-z]_"):
+def extract_it(img, pattern = "([A-Za-z]+_)+"):      # [^?!.]?
     ptrn = re.compile(pattern)
     srch = ptrn.search(img)
     result = srch.group()[:-1].lower().split('_')
@@ -60,7 +60,8 @@ def get_pet_labels(image_dir):
     """
     image_label_dic = {}
     for img in listdir(image_dir):
-        image_label_dic[img] = [extract_it(img)]
+        if img[0] != '.':
+            image_label_dic[img] = [extract_it(img)]
     return image_label_dic
 
 

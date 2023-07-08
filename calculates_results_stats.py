@@ -107,6 +107,8 @@ def calculates_results_stats(results_dic):
     results_stats_dic = {"n_images": n_images,
                         "n_dogs_img": n_dogs_img,
                         "n_notdogs_img": n_notdogs_img,
+                        "n_correct_dogs": n_correct_dogs,
+                        "n_correct_notdogs": n_correct_notdogs,
                         "pct_correct_dogs": pct_correct_dogs,
                         "pct_correct_notdogs": pct_correct_notdogs,
                         "pct_correct_breed": pct_correct_breed,

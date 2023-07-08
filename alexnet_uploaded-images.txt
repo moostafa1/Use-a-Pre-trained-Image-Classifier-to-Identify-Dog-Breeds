@@ -62,6 +62,8 @@ The used pre-trained model: alexnet
 n_images: 4
 n_dogs_img: 2
 n_notdogs_img: 2
+n_correct_dogs: 2
+n_correct_notdogs: 2
 pct_correct_dogs: 100.0
 pct_correct_notdogs: 100.0
 pct_correct_breed: 0.0

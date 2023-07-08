@@ -71,7 +71,7 @@ def print_results(results_dic, results_stats_dic, model,
         if key.startswith('p'):
             print(f"{key}: {results_stats_dic[key]}")
 
-    if print_incorrect_dogs and results_stats_dic['n_dogs_img'] + results_stats_dic['n_notdogs_img'] != results_stats_dic['n_images']:
+    if print_incorrect_dogs and ((results_stats_dic['n_correct_dogs'] + results_stats_dic['n_correct_notdogs']) != results_stats_dic['n_images']):
         for k in results_dic:
             if sum(results_dic[k][3:]) == 1:
                 print(f"pet image: {results_dic[k][0]}, classifier labels: {results_dic[k][1]}")
@@ -103,7 +103,7 @@ if __name__ == "__main__":
     model = 'vgg'
     results_dic = get_pet_labels("pet_images/")
     #print(image_label_dic)
-    classify_images("pet_images", results_dic, "vgg")
+    classify_images("pet_images/", results_dic, "vgg")
     adjust_results4_isadog(results_dic, "dognames.txt")
     results_stats_dic = calculates_results_stats(results_dic)
     print(results_stats_dic)

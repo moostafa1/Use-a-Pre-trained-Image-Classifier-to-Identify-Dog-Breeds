@@ -40,12 +40,6 @@ from print_results import print_results
 
 
 
-# variables
-#image_dir = r"pet_images/"
-# image_dir = r"uploaded_images/"
-
-
-
 # Main program function defined below
 def main():
     # TODO 0: Measures total program runtime by collecting start time

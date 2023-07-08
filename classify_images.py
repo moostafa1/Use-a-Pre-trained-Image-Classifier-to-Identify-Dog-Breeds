@@ -67,7 +67,7 @@ def classify_images(images_dir, results_dic, model):
            None - results_dic is mutable data type so no return needed.
     """
     for img in listdir(images_dir):
-        image_classification = classifier(images_dir + img, model).lower()
+        image_classification = classifier(images_dir + img, model).lower().strip()
         if img in results_dic:
             #print(f"image: {img}, actual: {results_dic[img]}, predicted: {image_classification}")
             results_dic[img].extend([image_classification, results_dic[img][0] in image_classification.split(', ')])
@@ -80,7 +80,7 @@ def classify_images(images_dir, results_dic, model):
 
 if __name__ == "__main__":
     from get_pet_labels import get_pet_labels
-    path = r"uploaded_images/"
+    path = r"pet_images/"
     image_label_dic = get_pet_labels(path)
     # print(image_label_dic)
     classify_images(path, image_label_dic, "vgg")

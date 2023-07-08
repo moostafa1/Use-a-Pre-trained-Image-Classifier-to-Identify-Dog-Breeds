@@ -320,6 +320,8 @@ The used pre-trained model: alexnet
 n_images: 40
 n_dogs_img: 30
 n_notdogs_img: 10
+n_correct_dogs: 30
+n_correct_notdogs: 10
 pct_correct_dogs: 100.0
 pct_correct_notdogs: 100.0
 pct_correct_breed: 80.0
@@ -331,4 +333,4 @@ pet image: golden retriever, classifier labels: tibetan mastiff
 pet image: golden retriever, classifier labels: afghan hound, afghan
 pet image: great pyrenees, classifier labels: kuvasz
 
-** Total Elapsed Runtime: 0:0:2
+** Total Elapsed Runtime: 0:0:1

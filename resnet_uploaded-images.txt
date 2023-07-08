@@ -62,9 +62,11 @@ The used pre-trained model: resnet
 n_images: 4
 n_dogs_img: 2
 n_notdogs_img: 2
+n_correct_dogs: 2
+n_correct_notdogs: 2
 pct_correct_dogs: 100.0
 pct_correct_notdogs: 100.0
 pct_correct_breed: 100.0
 pct_match: 75.0
 
-** Total Elapsed Runtime: 0:0:0
+** Total Elapsed Runtime: 0:0:1

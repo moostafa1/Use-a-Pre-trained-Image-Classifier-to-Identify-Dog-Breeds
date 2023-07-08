@@ -1,60 +1,42 @@
 file: vgg_uploaded-images.txt
 -----------------------------
-vgg: Total Elapsed Runtime: 0:0:1
- ** Check Statistics - calculated from this function as a check:
-N Images:  4  N Dog Images:  2  N NotDog Images:  2 
-Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
-The used pre-trained model: vgg
+vgg: Total Elapsed Runtime: 0:0:2
 n_images: 4
 n_dogs_img: 2
 n_notdogs_img: 2
+n_correct_dogs: 2
+n_correct_notdogs: 2
 pct_correct_dogs: 100.0
 pct_correct_notdogs: 100.0
 pct_correct_breed: 100.0
 pct_match: 75.0
-img: Beagle_01.jpg: ('model_name: vgg, real_label: beagle, predected_label: beagle', 'classified correctly: True')
-img: Beagle_02.jpg: ('model_name: vgg, real_label: beagle, predected_label: beagle', 'classified correctly: True')
-img: Chair_01.jpg: ('model_name: vgg, real_label: chair, predected_label: rocking chair, rocker', 'classified correctly: True')
-img: Lorikeet_01.jpg: ('model_name: vgg, real_label: lorikeet, predected_label: lorikeet', 'classified correctly: True')
 
 
 file: resnet_uploaded-images.txt
 --------------------------------
-resnet: Total Elapsed Runtime: 0:0:0
- ** Check Statistics - calculated from this function as a check:
-N Images:  4  N Dog Images:  2  N NotDog Images:  2 
-Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed: 100.0
-The used pre-trained model: resnet
+resnet: Total Elapsed Runtime: 0:0:1
 n_images: 4
 n_dogs_img: 2
 n_notdogs_img: 2
+n_correct_dogs: 2
+n_correct_notdogs: 2
 pct_correct_dogs: 100.0
 pct_correct_notdogs: 100.0
 pct_correct_breed: 100.0
 pct_match: 75.0
-img: Beagle_01.jpg: ('model_name: resnet, real_label: beagle, predected_label: beagle', 'classified correctly: True')
-img: Beagle_02.jpg: ('model_name: resnet, real_label: beagle, predected_label: beagle', 'classified correctly: True')
-img: Chair_01.jpg: ('model_name: resnet, real_label: chair, predected_label: studio couch, day bed', 'classified correctly: False')
-img: Lorikeet_01.jpg: ('model_name: resnet, real_label: lorikeet, predected_label: lorikeet', 'classified correctly: True')
 
 
 file: alexnet_uploaded-images.txt
 ---------------------------------
 alexnet: Total Elapsed Runtime: 0:0:0
-Pct Corr dog: 100.0 Pct Corr NOTdog: 100.0  Pct Corr Breed:   0.0
-The used pre-trained model: alexnet
 n_images: 4
 n_dogs_img: 2
 n_notdogs_img: 2
+n_correct_dogs: 2
+n_correct_notdogs: 2
 pct_correct_dogs: 100.0
 pct_correct_notdogs: 100.0
 pct_correct_breed: 0.0
 pct_match: 25.0
-pet image: beagle, classifier labels: labrador retriever
-pet image: beagle, classifier labels: labrador retriever
-img: Beagle_01.jpg: ('model_name: alexnet, real_label: beagle, predected_label: labrador retriever', 'classified correctly: False')
-img: Beagle_02.jpg: ('model_name: alexnet, real_label: beagle, predected_label: labrador retriever', 'classified correctly: False')
-img: Chair_01.jpg: ('model_name: alexnet, real_label: chair, predected_label: barber chair', 'classified correctly: True')
-img: Lorikeet_01.jpg: ('model_name: alexnet, real_label: lorikeet, predected_label: lorikeet', 'classified correctly: True')
 
 
