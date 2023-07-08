@@ -1,6 +1,6 @@
 file: vgg_pet-images.txt
 ------------------------
-vgg: Total Elapsed Runtime: 0:0:16
+vgg: Total Elapsed Runtime: 0:0:14
 n_images: 40
 n_dogs_img: 30
 n_notdogs_img: 10
@@ -28,7 +28,7 @@ pct_match: 82.5
 
 file: alexnet_pet-images.txt
 ----------------------------
-alexnet: Total Elapsed Runtime: 0:0:1
+alexnet: Total Elapsed Runtime: 0:0:2
 n_images: 40
 n_dogs_img: 30
 n_notdogs_img: 10

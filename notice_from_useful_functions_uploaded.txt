@@ -14,7 +14,7 @@ pct_match: 75.0
 
 file: resnet_uploaded-images.txt
 --------------------------------
-resnet: Total Elapsed Runtime: 0:0:1
+resnet: Total Elapsed Runtime: 0:0:0
 n_images: 4
 n_dogs_img: 2
 n_notdogs_img: 2

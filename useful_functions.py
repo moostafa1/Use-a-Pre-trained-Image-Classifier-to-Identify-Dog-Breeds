@@ -126,15 +126,15 @@ def stats_extract(file):
 
 
 
-files_lst = ['vgg_uploaded-images.txt', 'resnet_uploaded-images.txt', 'alexnet_uploaded-images.txt']
-imgs_lst = listdir("uploaded_images")
+# files_lst = ['vgg_uploaded-images.txt', 'resnet_uploaded-images.txt', 'alexnet_uploaded-images.txt']
+# imgs_lst = listdir("uploaded_images")
 # img_1 = "Beagle_01.jpg"
 # img_2 = "Beagle_02.jpg"
 # img_3 = "Chair_01.jpg"
 # img_4 = "Parrot_01.jpg"
 
-# files_lst = ['vgg_pet-images.txt', 'resnet_pet-images.txt', 'alexnet_pet-images.txt']
-# imgs_lst = listdir("pet_images")
+files_lst = ['vgg_pet-images.txt', 'resnet_pet-images.txt', 'alexnet_pet-images.txt']
+imgs_lst = listdir("pet_images")
 
 #
 # str_to_add = []
@@ -185,8 +185,8 @@ def write_file(file, text_lst):
 
 
 
-# write_file("notice_from_useful_functions_pet.txt", str_to_add)
-write_file("notice_from_useful_functions_uploaded.txt", str_to_add)
+write_file("notice_from_useful_functions_pet.txt", str_to_add)
+#write_file("notice_from_useful_functions_uploaded.txt", str_to_add)
 
 
 # print(f"{img_3}:")

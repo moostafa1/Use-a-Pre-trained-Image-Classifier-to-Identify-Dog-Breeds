@@ -18,7 +18,7 @@
 ##
 # Imports python modules
 from os import listdir
-import re
+from re import findall
 
 
 # TODO 2: Define get_pet_labels function below please be certain to replace None
@@ -27,15 +27,15 @@ import re
 #
 
 
-
-def extract_it(img, pattern = "([A-Za-z]+_)+"):      # [^?!.]?
-    ptrn = re.compile(pattern)
-    srch = ptrn.search(img)
-    result = srch.group()[:-1].lower().split('_')
-    result = " ".join(result)
-
-    return result
-
+#
+# def extract_it(img, pattern = "([A-Za-z]+_)+"):      # [^?!.]?
+#     ptrn = re.compile(pattern)
+#     srch = ptrn.search(img)
+#     result = srch.group()[:-1].lower().split('_')
+#     result = " ".join(result)
+#
+#     return result
+#
 
 
 
@@ -58,18 +58,22 @@ def get_pet_labels(image_dir):
       List. The list contains for following item:
          index 0 = pet image label (string)
     """
-    image_label_dic = {}
-    for img in listdir(image_dir):
-        if img[0] != '.':
-            image_label_dic[img] = [extract_it(img)]
-    return image_label_dic
+    pet_labels = [[findall("([A-Za-z_]+)", img)[0].lower().replace("_", " ").strip()] for img in listdir(image_dir) if not img.startswith(".")]
+    pet_img_name = [img for img in listdir(image_dir) if not img.startswith(".")]
+    return dict(zip(pet_img_name, pet_labels))
+    # image_label_dic = {}
+    # for img in listdir(image_dir):
+    #     if img[0] != '.':
+    #         image_label_dic[img] = [extract_it(img)]
+    # return image_label_dic
 
 
 
 
 
 if __name__ == "__main__":
-    path = "uploaded_images/"
+    path = "pet_images/"
     image_label_dic = get_pet_labels(path)
     for i in image_label_dic:
         print(f"{i}: {image_label_dic[i]}")
+    print(type(image_label_dic))
